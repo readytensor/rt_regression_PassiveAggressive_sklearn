@@ -25,12 +25,12 @@ class Regressor:
 
     def __init__(
         self,
-        C: Optional[float] = 1.0,
+        C: Optional[float] = 0.5,
         **kwargs,
     ):
         """Construct a new PassiveAggressive regressor.
 
-        Args: C (float, optional): Maximum step size (regularization). Defaults to 1.0
+        Args: C (float, optional): Maximum step size (regularization). Defaults to 0.5
         """
         self.C = float(C)
         self.model = self.build_model()
